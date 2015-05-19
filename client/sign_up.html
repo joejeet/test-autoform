@@ -1,0 +1,15 @@
+<template name="signUp">
+  {{ #autoForm collection="Meteor.users" id="signUp"}}
+    {{> afQuickField name='profile.role' type="hidden" value="candidate"}}
+    {{> afQuickField name='profile.firstName' placeholder="First Name" label-class="sr-only" }}
+    {{> afQuickField name='profile.lastName' placeholder="Last Name" label-class="sr-only"}}
+    {{> afQuickField name='email' placeholder="Email" label-class="sr-only"}}
+    {{> afQuickField name='password' type="password" placeholder="Password" label-class="sr-only" }}
+    {{> afQuickField name='passwordConfirmation' type="password" placeholder="Password Confirmation" label-class="sr-only"}}
+    <input type="submit" value="Sign up">      
+  {{ /autoForm }} 
+</template>
+
+<template name="dashboard">
+<h1>It works!</h1>
+</template>
